@@ -1,0 +1,388 @@
+Practical 1
+
+
+Step 1: Search Mehta Group on Google and take a screenshot of the result displayed.
+
+Step 2: Take screenshot of the side panel containing Mehta Group’s information.
+
+Step 3: Record the top 3 results of the following queries (take screenshot):
+	•	Use a search operator to find PDF files related to “computer networks notes”.
+	•	Search only within .edu websites for “operating system syllabus”.
+	•	Find websites that contain the exact phrase “types of database models”.
+	•	Find pages where the word Java appears in the title.
+	•	Find pages where the word “login” appears in the URL.
+	•	Locate websites related to w3schools.com.
+
+Step 4: Go to browser and search for https://who.is/.
+
+Step 5: Search for https://www.mehtagroup.com/.
+
+Step 6: Type a domain name and record the details displayed.
+
+Step 7: Click on DNS Record.
+
+Step 8: Click on Diagnosis.
+
+
+Practical 2
+
+
+Part 1: Password Encryption and Decryption using CrypTool
+
+Step 1: Download CrypTool 1.4.42.
+
+Step 2: Open CrypTool → File → New.
+
+Step 3: Enter a message to encrypt.
+
+Step 4: Select Encrypt/Decrypt → Symmetric (Modern) → RC4.
+
+Step 5: Type the key length and enter the secret key.
+
+Step 6: Click Encrypt.
+
+Step 7: Save the file in a location.
+
+Step 8: Open the file to perform decryption.
+
+Step 9: Select Encrypt/Decrypt → Symmetric (Modern) → RC4.
+
+Step 10: Click Decrypt.
+
+Step 11: Enter the secret key and click Decrypt.
+
+⸻
+
+Part 2: Password Cracking using Cain and Abel
+
+Step 1: Open Cain and Abel.
+
+Step 2: Click Hash Calculator, enter text, and click Calculate to generate a hash value.
+
+Step 3: Select the generated MD5 hash.
+
+Step 4: Right-click on the empty area and select Add to list.
+
+Step 5: Add the MD5 hash value.
+
+Step 6: The MD5 hash appears in the empty area. Right-click it and select Dictionary Attack.
+
+Step 7: Right-click and select Add to list, then choose the Wordlist from the Cain and Abel folder and click Open.
+
+Step 8: Click Start.
+
+Step 9: A password match is found.
+
+
+Here are only the steps from Practical 2B (ii):
+
+Step 1: Open Cain and Abel.
+
+Step 2: Click Configure → Select the adapter → Click Apply → Click OK.
+
+Step 3: Activate Sniffer.
+
+Step 4: Click the plus (+) sign.
+
+Step 5: Click All Hosts in Subnet, select All Tests, then click OK.
+
+Step 6: Click APR.
+
+Step 7: Click on the empty area and click the plus (+) sign.
+
+Step 8: Select the first IP address and select all IP addresses on the right side, then click OK.
+
+Step 9: Activate APR.
+
+Step 10: Open testphp.vulnweb.com.
+
+Step 11: Click Signup.
+
+Step 12: Enter username and password.
+
+Step 13: Click Passwords → Select HTTP.
+
+
+Practical 3
+
+
+Here are only the steps from Practical 3:
+
+Step 1: Execute the ifconfig command to retrieve network interface information.
+
+Step 2: Use the ping google.com command to test network connectivity.
+
+Step 3: Use the netstat command to view active network connections.
+
+Step 4: Perform traceroute google.com to trace the route packets take to reach the target host.
+
+Step 5: In Windows, use ipconfig to retrieve network configuration.
+
+Step 6: Use ping command to test connectivity.
+
+Step 7: Use netstat to view network connections.
+
+Step 8: Use tracert www.google.com to trace the route.
+
+Step 9: Open Cain & Abel for ARP poisoning.
+
+
+
+Practical 4
+
+
+
+Here are the steps exactly with commands (text only) from Practical 4:
+
+Step 1: Install nmap from https://nmap.org/download and open it.
+
+Step 2: Type scanme.nmap.org to check nmap.
+
+Step 3: Perform ACK scan
+COMMAND: nmap -sA -T4 scanme.nmap.org
+
+Step 4: Perform SYN (Stealth) Scan
+COMMAND: nmap -p22,113,139 scanme.nmap.org
+
+Step 5: Perform FIN Scan
+COMMAND: nmap -sF -T4 scanme.nmap.org
+
+Step 6: Perform NULL Scan
+COMMAND: nmap -sN -p 22 scanme.nmap.org
+
+Step 7: Perform XMAS Scan
+COMMAND: nmap -sX -T4 scanme.nmap.org
+
+
+Practical 5a
+
+Step 1: Install and open Wireshark on the system.
+
+Step 2: Select the ens33 network interface and start capturing network traffic.
+
+Step 3: Open a web browser and visit http://testphp.vulnweb.com/ and enter login details.
+
+Step 4: In Wireshark, type http in the filter bar, find the POST request, then right-click and select Follow → TCP Stream.
+
+Step 5: Observe the TCP stream to view the username and password entered in the website form.
+
+
+Practical 5b
+Steps for DoS Attack Practical (from the PDF):
+	1.	In VirtualBox, go to Settings → Network → Bridged Adapter for Windows 7 VM.
+	2.	Download the Nemesy DoS Attack tool in Windows 7.
+	3.	Open the website and download the Nemesy tool.
+	4.	Open Command Prompt in Windows 7 and type ipconfig to note the IP address.
+	5.	Open Command Prompt in the target/main host and type ipconfig to note its IP address (Ethernet adapter).
+	6.	Check connectivity by sending packets:
+ping [win7 IP address] -t -l 65500
+	7.	In Windows 7, right-click Taskbar → Start Task Manager.
+	8.	Go to the Networking tab to observe packets being received.
+	9.	Press Ctrl + C to stop the ping and observe the result.
+	10.	Open Control Panel.
+	11.	Go to Network & Internet → Ethernet → Properties → Sharing, tick the checkbox and change Home networking connection.
+	12.	Select VMware Network Adapter and click Settings.
+	13.	Select all services.
+	14.	In Windows 7 CMD, run:
+ping [Default Gateway] -t -l 65500
+	15.	Install Nemesy in Windows 7, enter Victim IP address, packet size, and time, then start the attack and observe the effect.
+
+
+
+Practical 6
+Step 1: Download and install XAMPP. Open XAMPP Control Panel from the Start menu.
+
+Step 2: Download DVWA from
+https://github.com/digininja/DVWA and extract the ZIP file.
+
+Step 3: Copy the DVWA folder to C:\xampp\htdocs\.
+If the folder name is DVWA-master, rename it to DVWA.
+
+Step 4: Go to C:\xampp\htdocs\DVWA\config and rename config.inc.dist to config.inc.php.
+
+Step 5: Open config.inc.php and set:
+	•	db_server = 127.0.0.1
+	•	db_user = root
+	•	db_password = ''
+
+Step 6: Open XAMPP Control Panel and start Apache and MySQL.
+
+Step 7: Open browser and go to:
+http://localhost/DVWA/setup.php
+
+Step 8: Click Create/Reset Database, then click Logout.
+
+Step 9: Login again and go to DVWA Security, set the Security Level to Low.
+
+Step 10: Click XSS (Stored), enter a name and type the script:
+<img src=x onerror=alert(1)>
+Then click Sign Guestbook.
+
+P7
+
+1) Open the Virtual Machine (VM) and start Firefox 52.9.0.
+2) Download the Tamper Data add-on (tamper_data-11.0.1-fx.xpi) from the given GitHub link.
+3) In Firefox, type about:config in the address bar and press Enter.
+4) Click “I Accept the Risk”.
+5) In the search bar, type xpinstall.signatures.required.
+6) Double-click it to change the value from True to False.
+7) Open Firefox Menu → Add-ons.
+8) Click the Settings (⚙) icon.
+9) Select Install Add-on From File.
+10) Choose the downloaded tamper_data-11.0.1-fx.xpi file.
+11) Click Install and restart Firefox.
+12) Press ALT to display the menu bar.
+13) Go to Tools → Tamper Data → Start Tamper Data.
+14) Open the test website.
+15) Click Sign Up and create a new user account.
+16) Again go to Tools → Tamper Data.
+17) Enter the username and password and click Login.
+18) When the request is intercepted, click Tamper.
+19) Modify the HTTP request parameters such as cookies or session values.
+20) Submit the modified request and observe the result.
+
+
+P8
+
+1) Download and install XAMPP on your system.
+
+2) Go to the DVWA GitHub repository and download the ZIP file:
+https://github.com/digininja/DVWA
+
+3) Extract the downloaded DVWA zip file.
+
+4) If the folder name is DVWA-master, rename it to DVWA.
+
+5) Move the DVWA folder to:
+C:\xampp\htdocs\DVWA
+
+6) Open the file:
+C:\xampp\htdocs\DVWA\config\config.inc.php
+
+7) Update the database configuration:
+db_server = 127.0.0.1
+db_user = 'root'
+db_password = ''
+
+8) Open the XAMPP Control Panel from the Start menu.
+
+9) Start the Apache and MySQL services.
+
+10) Open a browser and go to:
+http://localhost/DVWA/setup.php
+
+11) Click on Create/Reset Database.
+
+12) Open the DVWA login page:
+http://localhost/dvwa/login.php
+
+13) Login using:
+Username: admin
+Password: password
+
+14) Click on DVWA Security and set the security level to Low.
+
+15) Click on SQL Injection from the menu.
+
+16) Enter the user ID as:
+1
+and click Submit.
+
+17) Try another SQL query:
+1' OR '1'='1' #
+
+18) Open phpMyAdmin by going to:
+http://localhost/phpmyadmin
+
+19) Click on the dvwa database.
+
+20) Open the user table to view the stored data.
+
+
+P9
+
+1) Open your browser and go to https://www.jetbrains.com/pycharm/
+
+2) Click on Download.
+
+3) Select PyCharm Community Edition (Free version).
+
+4) Click Download under the Community version.
+
+5) Install PyCharm on your system.
+
+6) Open PyCharm after installation.
+
+7) On the Welcome screen, click New Project.
+
+8) Select Pure Python as the project type.
+
+9) Choose the project location (default location is fine).
+
+10) Under Python Interpreter, select Existing Interpreter.
+
+11) Choose the installed Python 3.x version.
+
+12) Click Create to create the project.
+
+13) Go to File → Settings → Python Interpreter.
+
+14) Confirm that Python 3.x (your installed version) is selected.
+
+15) Create a new Python file in the project.
+
+16) Type the given program/code in the file.
+
+17) Save the file.
+
+18) Click Run to execute the program.
+
+19) Observe the output of the program.
+
+
+
+P10
+
+1) Open Google Chrome and search for Metasploitable download.
+
+2) Or download it directly from:
+https://sourceforge.net/projects/metasploitable/
+
+3) Download the Metasploitable virtual machine file.
+
+4) Open your Virtual Machine software.
+
+5) Go to File → Open.
+
+6) Select the downloaded Metasploitable file and load it.
+
+7) Open the Ubuntu terminal.
+
+8) Type the following command to switch to root user:
+sudo su
+
+9) Run the network discovery command:
+netdiscover
+
+10) Note the IP address of the Metasploitable machine.
+
+11) Scan the target machine using Nmap:
+nmap -sV (IP address)
+
+12) Look for the vulnerable vsftpd service in the scan results.
+
+13) Search for vsftpd exploits.
+
+14) Open the terminal and type:
+msfconsole
+
+15) In msfconsole, use the search command to find the exploit.
+
+16) Search for:
+vsftpd Backdoor Command Execution
+
+17) Select and run the exploit module.
+
+18) Execute the exploit to gain access to the target system.
+
+19) Observe the output of the exploitation process.
